@@ -1,0 +1,67 @@
+label, #toggle{
+    display: none;
+}
+
+@media (max-width: 480px){
+    
+    body{
+        background-image: url('orange.png');
+    }
+
+    nav{
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        color: #808397;
+        font: {
+            family: 'Barlow', sans-serif;
+            size: 20px;
+        }
+    }
+
+    .icon{
+        height: 24px;
+    }
+
+    label {
+        display: flex;
+        justify-content: flex-end;
+        color: #FFFFFF;
+        font-size: 24px;
+    }
+      #toggle:checked + .main {
+          display: flex;
+    }
+
+    div.main{
+        display: none;
+        flex-direction: column;
+        background-color: #FFFCF8;
+        position: absolute;
+        a {
+            margin: 32px;
+        }
+    }
+}  
+
+@media (min-width: 480px){
+    body{
+        background-image: url('orange.png');
+    }
+    
+    nav {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        color: #FFFFFF;
+        font: {
+            family: 'Barlow', sans-serif;
+            size: 18px;
+        }
+
+        a {
+            margin: 47px;
+        }
+        
+    }
+}
