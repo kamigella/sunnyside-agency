@@ -31,6 +31,7 @@ label, #toggle {
     flex-direction: column;
     background-color: #FFFCF8;
     position: absolute;
+    top: 7.29%;
   }
   div.main a {
     margin: 32px;
